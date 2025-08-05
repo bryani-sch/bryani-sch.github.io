@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+        <title>Astronomy</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js" defer></script>
+
+        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+        <link rel="shortcut icon" href="images/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Astronomy"/>
+        <link rel="manifest" href="manifest.json"/>
+    </head>
+
+    <body id="top">
+        <button id="fullscreenButton" class="glass" title="Toggle Fullscreen" aria-label="Toggle Fullscreen">⛶ Toggle Fullscreen</button>
+        <div id="mobileQrCode" class="glass" title="Mobile QR Code">
+            <p>View on Mobile</p>
+            <figure>
+                <img src="images/mobileQr.png" alt="Mobile QR Code Image">
+            </figure>
+        </div>
+
+        <audio id="backgroundAudio" src="audio/Tony-Anderson-Lune2.mp3"></audio>
+
+        <header class="glass"> <!-- Header -->
+            <!-- PC Menu Bar -->
+            <div id="PC">
+                <a id="logo" href="index.html" aria-label="Home" title="Home"></a>
+                <nav>
+                    <button>The Solar System</button>
+                    <button>Life Cycle of Stars</button>
+                    <button>Exploration of the Universe</button>
+                </nav>
+                <a id="toTop" href="#top" aria-label="Back To Top" title="Back To Top">
+                    <img src="images/toTop.png" alt="Back To Top Image">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Bar -->
+            <div id="Mobile">
+                <button id="mobileOpenMenu" class="glass">Open Menu</button>
+                <nav>
+                    <button>The Solar System</button>
+                    <button>Life Cycle of Stars</button>
+                    <button>Exploration of the Universe</button>
+                </nav>
+            </div>
+        </header>
+
+        <div> <!-- Center -->
+            <main> <!-- Main Content -->
+                
+                <section id="backgroundText">
+                    <div id="background">
+                        <h2 id="title">ASTRONOMY</h2>
+                        <p id="subTitle">Interact to Start</p>
+
+                        <p id="interactTopicNotice">Interact or select any topic to get started</p>
+                    </div> <!-- Background Image -->
+                </section>
+
+                <!-- The Solar System Page -->
+                <section id="TheSolarSystem" class="contentPage">
+                    <!-- The Solar System subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>The Solar System</h2>
+                        <article>
+                            <h2>The Solar System</h2>
+                            <p>The Solar System <span class="highlight">consists of the Sun and all the celestial objects gravitationally bound to it,
+                                including eight planets, dwarf planets, moons, asteroids, and comets.</span> It formed about 4.5 billion 
+                                years ago from a cloud of gas and dust, and is located in the Milky Way galaxy. The Sun, a star, 
+                                is the central body, and the planets orbit it in elliptical paths.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- Planet Display subContent -->
+                    <div id="planetDisplay" class="subContentPage">
+                        <div id="planetCycle">
+                            <figure class="planet left">
+                                <img src="images/neptune.png" alt="Planet Image Placeholder">
+                            </figure>
+
+                            <figure class="planet center">
+                                <img src="images/sun.png" alt="Planet Image Placeholder">
+                            </figure>
+
+                            <figure class="planet right">
+                                <img src="images/mercury.png" alt="Planet Image Placeholder">
+                            </figure>
+                        </div>
+
+                        <!-- Planet Cycle Bar subContent -->
+                        <div id="planetCycleBar">
+                            <button id="planetCycleLeft" aria-label="Previous Planet">&lt;</button> <!-- because '<' considered unescaped -->
+                            <article>
+                                <h2 id="planetName">PLANET NAME</h2>
+                                <p id="planetInformation">Planet Information</p>
+                                <p id="planetDistanceFromSun">Planet Distance From Sun</p>
+                                <a id ="planetHyperlink" class="glass" href='' target="_blank">Planet Hyperlink</a>
+                            </article>
+                            <button id="planetCycleRight" aria-label="Next Planet">&gt;</button>
+                        </div>
+                    </div>
+
+                    <!-- The Solar System in the Universe subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>The Solar System in the Universe</h2>
+                        <article>
+                            <h2>The Solar System in the Universe</h2>
+                            <p>The Solar System is just <span class="highlight">one of hundreds of billions</span> nestled within the Milky Way galaxy, 
+                                a vast spiral system spanning about 100,000 light-years. Our Sun, and everything bound to it, 
+                                resides in a relatively quiet region known as the Orion Arm, a minor spiral arm located <span class="highlight">about 27,000 light-years from the galactic center.</span> 
+                                Beyond the Milky Way, we're part of a collection of galaxies called the Local Group, which includes Andromeda and dozens of smaller galaxies. 
+                                While the Solar System may seem vast on a human scale, it's just a tiny speck in a cosmic ocean. Understanding where we sit in this larger structure helps put into perspective just <span class="highlight">how expansive, and mysterious the universe truly is.</span></p>
+                        </article>
+                    </div>
+                    
+                    <!-- Solar System Video  -->
+                    <div class="videoWrapper">
+                        <figure>
+                            <iframe src="https://www.youtube.com/embed/wEZBNsU4dMU" title="Solar System 101 | National Geographic"></iframe>
+                        </figure>
+                    </div>
+                    
+                </section>
+
+                <!-- Life Cycle Of Stars Page -->
+                <section id="LifeCycleOfStars" class="contentPage">
+                    <!-- Life Cycle Of Stars subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>Life Cycle Of Stars</h2>
+                        <article>
+                            <h2>Life Cycle Of Stars</h2>
+                            <p>Stars are born in nebulae, evolve through a main sequence phase, and eventually exhaust their fuel, 
+                                leading to different fates depending on their mass. <span class="highlight">Low to medium mass stars become red giants, 
+                                then planetary nebulae, and finally white dwarfs. Massive stars become red supergiants, explode 
+                                as supernovae, and then collapse into either neutron stars or black holes.</span></p>
+                        </article>
+
+                        <!-- Image -->
+                        <figure>
+                            <img src="images/lifeOfStarsVisual.jpg" alt="Life of Stars Image" title="Life of Stars Image">
+                        </figure> 
+                    </div>
+
+                    <!-- Quiz on Stars subContent -->
+                    <div class="subContentPage glass quizSection specialSection">
+                        <h1>Quiz on Stars</h1>
+                        <p>Test your knowledge on stars here</p>
+
+                        <!-- Action Bar -->
+                        <div class="actionBar glass">
+                            <button id="quizButton" class="glass">Start Quiz</button>
+                            <p id="score">Score: -</p>
+                        </div>
+
+                        <div id="fieldsetDiv">
+                            <!-- Q1 -->
+                            <fieldset>
+                                <legend>1. What is the age of the Sun?</legend>
+                                <input type="radio" name="q1" value="1"> 4.603Bil Years <!-- correct -->
+                                <input type="radio" name="q1" value="2"> 3.851Bil Years
+                                <input type="radio" name="q1" value="3"> 11.412Bil Years
+                                <input type="radio" name="q1" value="4"> 8.744Bil Years
+                            </fieldset>
+                            <!-- Q2 -->
+                            <fieldset>
+                                <legend>How many stars are there in the Milky Way Galaxy?</legend>
+                                <input type="radio" name="q2" value="1"> 200,000
+                                <input type="radio" name="q2" value="2"> 200.0Mil
+                                <input type="radio" name="q2" value="3"> 200.0Bil <!-- correct -->
+                                <input type="radio" name="q2" value="4"> 200.0Tril
+                            </fieldset>
+                            <!-- Q3 -->
+                            <fieldset>
+                                <legend>Most stars form tightly packed groups called:</legend>
+                                <input type="radio" name="q3" value="1"> Star clusters <!-- correct -->
+                                <input type="radio" name="q3" value="2"> Star huddles
+                                <input type="radio" name="q3" value="3"> Star formations
+                                <input type="radio" name="q3" value="4"> Star gang
+                            </fieldset>
+                            <!-- Q4 -->
+                            <fieldset>
+                                <legend>What is the most important thing that the mass of a star determines?</legend>
+                                <input type="radio" name="q4" value="1"> Its tem    perature
+                                <input type="radio" name="q4" value="2"> How it will live or die
+                                <input type="radio" name="q4" value="3"> Its luminosity and colour
+                                <input type="radio" name="q4" value="4"> All of the above <!-- correct -->
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Exploration Of The Universe Page -->
+                <section id="ExplorationOfTheUniverse" class="contentPage">
+                    <!-- Apollo 11 subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>Apollo 11</h2>
+                        <article class="missionsSubContent">
+                            <h2>Apollo 11</h2>
+                            <p>Apollo 11 was the <span class="highlight">first crewed mission to land humans on the Moon.</span> Launched on July 16, 1969, 
+                                the mission culminated in Neil Armstrong and Buzz Aldrin becoming the first humans to walk on the lunar surface on July 20, 1969. 
+                                Michael Collins piloted the Command Module Columbia in lunar orbit while Armstrong and Aldrin landed in the Lunar Module Eagle. </p>
+                        </article>
+                        <!-- Image Sprite -->
+                        <figure>
+                            <div class="bg-1"></div>
+                        </figure>
+                    </div>
+
+                    <!-- Voyager 1 & 2 subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>Voyager 1 & 2</h2>
+                        <article class="missionsSubContent">
+                            <h2>Voyager 1 & 2</h2>
+                            <p>Voyager 1 and Voyager 2 are <span class="highlight">twin spacecraft launched by NASA in 1977 to explore the outer solar system and beyond.</span> 
+                                They are the most distant human-made objects from Earth and are currently exploring interstellar space. 
+                                Both spacecraft have far exceeded their original five-year mission, continuing to transmit valuable scientific data from interstellar space. </p>
+                        </article>
+                        <!-- Image Sprite -->
+                        <figure>
+                            <div class="bg-2"></div>
+                        </figure>
+                    </div>
+
+                    <!-- Hubble Space Telescope subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>Hubble Space Telescope</h2>
+                        <article class="missionsSubContent">
+                            <h2>Hubble Space Telescope</h2>
+                            <p>The Hubble Space Telescope is <span class="highlight">a large space-based observatory that has revolutionized astronomy by providing incredibly sharp images of space, 
+                                free from the distortion of Earth's atmosphere.</span> Launched in 1990, it orbits Earth at an altitude of about 340 miles and has captured stunning images of planets, 
+                                stars, galaxies, and more, contributing significantly to our understanding of the universe. </p>
+                        </article>
+                        <!-- Image Sprite -->
+                        <figure>
+                            <div class="bg-3"></div>
+                        </figure>
+                    </div>
+
+                    <!-- James Webb Space Telescope subContent -->
+                    <div class="subContentPage">
+                        <h2 hidden>James Webb Space Telescope</h2>
+                        <article class="missionsSubContent">
+                            <h2>James Webb Space Telescope</h2>
+                            <p>The James Webb Space Telescope (JWST) is <span class="highlight">a large, infrared space telescope designed to observe the universe's earliest stars and galaxies, 
+                                as well as exoplanets and objects within our solar system.</span> Launched on December 25, 2021, it is the most powerful space telescope ever built, 
+                                with a primary mirror more than six times the light-collecting area of the Hubble Space Telescope. JWST will study the universe's cosmic dawn, 
+                                analyze exoplanet atmospheres, and explore the formation of stars and galaxies. </p>
+                        </article>
+                        <!-- Image Sprite -->
+                        <figure>
+                            <div class="bg-4"></div>
+                        </figure>
+                    </div>
+
+                    <!-- Block the Meteors Mniigame subContent -->
+                    <div class="subContentPage glass minigameSection specialSection">
+                        <h1>Block the Meteors Minigame</h1>
+                        <p>Meteors are falling, click them to block them before they crash</p>
+
+                        <!-- Action Bar -->
+                        <div class="actionBar glass">
+                            <button id="gameButton" class="glass">Start Game</button>
+                            <div id="intensityBar" class="glass">
+                                <p>Meteor Frequency: </p>
+                                <input type="range" id="intensity" min="1" max="9" value="1">
+                                <span id="intensityValue">1</span>
+                            </div>
+                            <p id="time">Time: 30</p>
+                            
+                        </div>
+                        
+                        <div id="meteorArea"></div>
+                    </div>
+                    
+                </section>
+            </main>
+        </div>
+
+        <hr>
+
+        <footer> <!-- Footer -->
+            <p class="glass"><strong>Created by Bryan | 容敬衡</strong></p>
+            <div id="sources">
+                <p>Sources</p>
+                <a href="https://in.pinterest.com/pin/23221754323987658/" target="_blank">Background Image <span>| Pinterest</span></a>
+                <a href="https://fluenticons.co/" target="_blank">Back to Top Icon Image <span>| Fluent Icons</span></a>
+                <a href="https://www.canva.com/" target="_blank">Planet Images <span>| Canva</span></a>
+                <a href="https://www.centralgalaxy.com/the-life-cycle-of-a-star/" target="_blank">Life Cycle of Stars Image <span>| Central Galaxy</span></a>
+                <a href="https://www.nasa.gov/" target="_blank">Mission & Telescope Images <span>| Nasa</span></a>
+                <a href="https://www.pngall.com/meteorite-png/download/134963/" target="_blank">Meteorite Image <span>| PNG ALL</span></a>
+            </div>
+        </footer>
+    </body>
+</html>
